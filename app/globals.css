@@ -1,10 +1,22 @@
 :root {
 	--mid-grey: oklch(0.58 0.0113 164.62);
 	--black: oklch(0.2 0.0037 164.66);
+	--white: oklch(1 0 0);
 
 	--brand-caribbean-100: oklch(0.9698 0.0422 174.34);
 	--brand-caribbean-200: oklch(0.9 0.1363 172.97);
 	--brand-caribbean-300: oklch(0.84 0.1608 173.06);
+
+	--heading-color: var(--black);
+	--heading-letter-spacing: 0.015em;
+	--text-color: var(--black);
+
+	--button-font-size: 0.875rem;
+	--button-letter-spacing: 0.01em;
+	--button-height: 3.25rem;
+	--button-border-radius: 0.25rem;
+
+	--module-spacing: 5rem;
 }
 
 *,
@@ -23,8 +35,9 @@ body {
 
 body {
 	font-family: var(--font-basier), var(--font-inter), system-ui, sans-serif;
-	background: #fff;
-	color: #0f0f0f;
+	color: var(--text-color);
+	line-height: 1.4;
+	background: var(--white);
 }
 
 button {
@@ -35,4 +48,14 @@ h1,
 h2,
 h3 {
 	font-family: var(--font-degular), var(--font-inter), system-ui, sans-serif;
+	font-weight: 400;
+	line-height: 1;
+	color: var(--heading-color);
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-size: clamp(3rem, 4.42vw + 1.96rem, 5.5rem);
+	letter-spacing: var(--heading-letter-spacing);
 }

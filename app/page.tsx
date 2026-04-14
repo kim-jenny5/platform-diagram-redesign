@@ -1,3 +1,9 @@
+import PlatformDiagram from '@/components/PlatformDiagram/PlatformDiagram';
+
 export default function HomePage() {
-	return <main>Hello World</main>;
+	return (
+		<main>
+			<PlatformDiagram />
+		</main>
+	);
 }
